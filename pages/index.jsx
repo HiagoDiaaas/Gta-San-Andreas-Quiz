@@ -85,7 +85,7 @@ export default function Home() {
         <Widget>
           <Widget.Content>
             <h1>Quizes da Galera</h1>
-
+            {db.external}
             <p> quizes da galera aqui </p>
           </Widget.Content>
         </Widget>

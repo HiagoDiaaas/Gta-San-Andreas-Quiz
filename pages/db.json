@@ -1,28 +1,76 @@
 {
     "bg": "https://www.wallpapertip.com/wmimgs/147-1471414_gta-san-andreas.jpg",
     "title": "GTA San Andreas Quiz",
-    "description": "Teste os seus conhecimentos e veja se voce faz parte da Groove Steet Families",
+    "description": "Teste os seus conhecimentos e veja se voce faz parte da Grove Steet Families",
     "questions": [
       {
         "image": "https://media.tenor.com/images/0023f6d1d93f3247fa0f0c0a4f5cabb3/tenor.gif",
-        "title": "Como fazer um seletor por id via CSS?",
+        "title": "O que acontece com CJ assim que começa o jogo ?",
         "description": "Essa é pra aquecer",
-        "answer": 2,
+        "answer": 0,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "Ele é pego pela policia e solto em um beco",
+          "Ele é sequestrado por um taxista",
+          "Ele é roubado por uma gangue rival",
+          "Ele é preso por trafico de drogas"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
+        "image": "https://media.tenor.com/images/75be93f068ffa7670561ca2ea4551816/tenor.gif",
+        "title": "Quais sao as gangues rivais de CJ?",
         "description": "Faz tempo em haha",
+        "answer": 2,
+        "alternatives": [
+           "Ballas e Grove",
+           "Grove e Vagos",
+           "Ballas e Vagos",
+           "Triads e Backstreet boys"
+        ]
+      },
+
+
+      {
+        "image": "https://media1.tenor.com/images/5639ade0d255d9dfcf7a5ed87e919d77/tenor.gif",
+        "title": "Na missão Drive-Thru o Big Smoke faz um pedido no Cluckin' Bell qual é esse pedido",
+        "description": "Follwo the danm train CJ!",
         "answer": 0,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+           "Dois números 9, um número 9 grande, um número 6 com molho extra, um número 7, dois números 45, um com queijo e uma bebida grande",
+           "Dois números 9, um número 9 grande, dois números 10 grandes, um con frango, e uma bebida grande, diet.",
+           "Dois números 9, um número 9 grande, um número 9 com queijo, dois número 7 e uma sopa com bebida grande."
+           
+        ]
+      },
+
+      {
+        "image": "https://media.tenor.com/images/eee9f9af020b331f5b64eb900d0bc19c/tenor.gif",
+        "title": "Assim que Cj vai para San Fierro ele ganha uma nova propriedade qual é ela?",
+        "description": "Ganhou a propiedade em uma corrida",
+        "answer": 1,
+        "alternatives": [
+           "Uma casa pequena",
+           "Uma garagem velha.",
+           "Um quarto em um hotel de luxo",
+           "Um cassino",
+           "Uma casa de campo"
+
+           
+        ]
+      },
+
+      {
+        "image": "https://media.tenor.com/images/0690327c7cfed7e9337e30cc8a9d2992/tenor.gif",
+        "title": "Cj descobre que tem 2 na Grove Street Famlies quem são eles?",
+        "description": "Bustas",
+        "answer": 3,
+        "alternatives": [
+           "Ryder e Cesar Vialpando",
+           "Big smoke e Og Loc",
+           "Sweet e Og Loc",
+           "Big Smoke e Ryder",
+           "Ryder e Sweet"
+
+           
         ]
       }
     ],
