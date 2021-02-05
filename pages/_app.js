@@ -5,7 +5,8 @@
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import Head from 'next/head';
 import db from './db.json';
-import './svgs/quiz.css';
+// eslint-disable-next-line import/no-unresolved
+import './css/quiz.css';
 
 const GlobalStyle = createGlobalStyle`
   * {

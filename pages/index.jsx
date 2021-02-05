@@ -1,4 +1,8 @@
-import React from 'react';
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-console */
+/* eslint-disable react/button-has-type */
+import React, { useState } from 'react';
+import { useRouter } from 'next/router';
 import styled from 'styled-components';
 import Head from 'next/head';
 import db from './db.json';
@@ -7,7 +11,9 @@ import QuizBackground from '../src/components/QuizBackground';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
 import GtaLogo from '../src/components/Gtalogo';
-
+// eslint-disable-next-line import/no-named-as-default
+import Input from '../src/components/Input/index';
+import Button from '../src/components/Button';
 // const BackgroundImage = styled.div`
 //   background-image: url(${db.bg});
 //   flex: 1;
@@ -27,6 +33,9 @@ export const QuizContainer = styled.div`
 `;
 
 export default function Home() {
+  const [name, setName] = useState('');
+  const router = useRouter();
+  console.log('retorno do useState', name, setName);
   return (
     <QuizBackground backgroundImage={db.bg}>
       <Head>
@@ -47,13 +56,29 @@ export default function Home() {
         <meta property="twitter:image" content="https://www.wallpapertip.com/wmimgs/147-1471414_gta-san-andreas.jpg" />
       </Head>
       <QuizContainer>
-        <GtaLogo />
+        <GtaLogo>
+          <img className="gtaLogo" src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Grand_Theft_Auto_San_Andreas_logo.svg" alt="gta" />
+        </GtaLogo>
         <Widget>
           <Widget.Header>
             <h1>{db.title}</h1>
           </Widget.Header>
           <Widget.Content>
             <p>{db.description}</p>
+            <form onSubmit={(infosDoEvento) => {
+              infosDoEvento.preventDefault();
+              router.push(`/quiz?name=${name}`);
+              console.log('Fazendo submissao');
+            }}
+            >
+              <Input
+                onChange={(infosDoEvento) => setName(infosDoEvento.target.value)}
+                placeholder="me diz seu nome"
+              />
+              <Button type="submit" disabled={name.length === 0}>
+                {`Jogar ${name}`}
+              </Button>
+            </form>
           </Widget.Content>
         </Widget>
 
@@ -65,7 +90,6 @@ export default function Home() {
           </Widget.Content>
         </Widget>
         <Footer />
-
       </QuizContainer>
       <GitHubCorner projectUrl="https://github.com/HiagoDiaaas" />
     </QuizBackground>

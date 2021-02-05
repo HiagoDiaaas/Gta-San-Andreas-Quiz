@@ -4,7 +4,7 @@
     "description": "Teste os seus conhecimentos e veja se voce faz parte da Groove Steet Families",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
+        "image": "https://media.tenor.com/images/0023f6d1d93f3247fa0f0c0a4f5cabb3/tenor.gif",
         "title": "Como fazer um seletor por id via CSS?",
         "description": "Essa é pra aquecer",
         "answer": 2,
@@ -27,7 +27,7 @@
       }
     ],
     "external": [
-      ""
+      "https://crash-bandicoot-quiz.andrequintero.vercel.app"
     ],
     "theme": {
       "colors": {
